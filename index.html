@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tarjeta Digital | Deiby Gomez</title>
+
+<meta name="description" content="Tarjeta digital profesional de Deiby Gomez, Coordinador Logístico. Contacto directo, ubicación y hoja de vida.">
+<meta name="author" content="Deiby Gomez">
+
+<style>
+:root {
+    --primary: #00d4ff;
+    --dark-bg: #050b14;
+    --card-bg: #0b1a2d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: radial-gradient(circle at top, #0a1f3d, #020812);
+    color: #fff;
+}
+
+.card {
+    width: 350px;
+    padding: 34px 28px;
+    border-radius: 26px;
+    background: linear-gradient(160deg, var(--card-bg), var(--dark-bg));
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.7),
+        inset 0 0 30px rgba(0,212,255,0.05);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    animation: appear 0.9s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(25px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 25px rgba(0,212,255,0.6);
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin: 8px 0 4px;
+    font-size: 1.8em;
+    letter-spacing: 0.5px;
+}
+
+.title {
+    display: inline-block;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 26px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 35px rgba(0,212,255,0.45);
+    font-weight: 600;
+}
+
+.btn-main {
+    background: linear-gradient(135deg, #00d4ff, #5ee7ff);
+    color: #000;
+    font-weight: 700;
+    border: none;
+    margin-top: 22px;
+}
+
+.footer {
+    margin-top: 26px;
+    font-size: 0.75em;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <!-- Cambia la URL por tu foto profesional -->
+    <img src="https://via.placeholder.com/400" alt="Deiby Gomez" class="profile-img">
+
+    <h1>Deiby Gomez</h1>
+    <span class="title">Coordinador Logístico</span>
+
+    <a href="https://wa.me/573209845544" class="btn">📱 WhatsApp</a>
+    <a href="mailto:deiby1228@gmail.com" class="btn">📧 Enviar correo</a>
+    <a href="https://www.google.com/maps/search/Calle+25F+%2385C-73+Santa+Cecilia" target="_blank" class="btn">📍 Ubicación</a>
+
+    <a href="https://drive.google.com/file/d/1J2pnMqFUxIieQa78PtOFfV0GMYtA_RXa/view" target="_blank" class="btn btn-main">
+        📄 Ver Hoja de Vida
+    </a>
+
+    <div class="footer">
+        Logística • Suministros • Transporte
+    </div>
+</div>
+
+</body>
+</html>
